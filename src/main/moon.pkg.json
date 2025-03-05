@@ -1,0 +1,20 @@
+{
+  "is-main": true,
+  "import": [
+    "wzzc-dev/webview-demo/lib",
+    {
+      "path": "wzzc-dev/webview-ffi/webview",
+      "alias": "webview"
+    }
+  ],
+  "link": {
+    "native": {
+      "cc-flags": "-fwrapv -fsanitize=address -fsanitize=undefined",
+      "cc-link-flags": "-L ./lib -lwebview"
+    }
+  },
+  "warn-list": "-1-2-3-6",
+  "supported-targets": [
+    "native"
+  ]
+}
