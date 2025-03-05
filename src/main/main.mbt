@@ -1,5 +1,4 @@
 fn main {
-  println(@lib.hello())
   let webview = @webview.Webview::new()
   webview.set_title("Hello Moonbit!")
   webview.set_html("<h1>Hello World!</h1>")
